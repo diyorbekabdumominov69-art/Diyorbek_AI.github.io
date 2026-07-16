@@ -370,3 +370,17 @@ table.innerHTML=`
 `;
 
 }
+function loadStats(){
+
+const users = localStorage.getItem("username") ? 1 : 0;
+
+const history = JSON.parse(localStorage.getItem("history")) || [];
+
+const premium = localStorage.getItem("premium") === "true" ? 1 : 0;
+
+document.getElementById("usersCount").innerText = users;
+document.getElementById("messagesCount").innerText = history.length;
+document.getElementById("premiumCount").innerText = premium;
+document.getElementById("onlineCount").innerText = users;
+
+}
