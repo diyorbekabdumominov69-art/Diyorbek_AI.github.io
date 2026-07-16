@@ -4,86 +4,249 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Diyorbek AI Chat</title>
 
 <link rel="stylesheet" href="style.css">
+
 <script defer src="script.js"></script>
 
 </head>
 
+
 <body onload="checkLogin()">
 
-<div class="chat">
 
-<div class="sidebar">
+<div class="chat-app">
 
-<h2>🤖 Diyorbek AI</h2>
 
-<button onclick="location.href='index.html'">
-🏠 Bosh sahifa
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="brand">
+
+🤖 Diyorbek AI
+
+</div>
+
+
+<button onclick="newChat()">
+
+➕ Yangi chat
+
 </button>
 
-<button onclick="location.href='premium.html'">
-👑 Premium
+
+<button onclick="location.href='history.html'">
+
+📜 Chat tarix
+
 </button>
 
-<button onclick="location.href='image.html'">
-🖼️ AI Image
-</button>
 
 <button onclick="location.href='profile.html'">
-👤 Profile
+
+👤 Profil
+
 </button>
+
+
+<button onclick="location.href='premium.html'">
+
+👑 Premium
+
+</button>
+
+
+<button onclick="location.href='image.html'">
+
+🖼 AI Rasm
+
+</button>
+
+
+<button onclick="location.href='settings.html'">
+
+⚙️ Sozlamalar
+
+</button>
+
+
+<div class="sidebar-bottom">
+
 
 <button onclick="logout()">
-🚪 Logout
+
+🚪 Chiqish
+
 </button>
 
+
 </div>
 
-<div class="chat-main">
 
-<div class="chat-header">
+</aside>
 
-<h2 id="welcome">
-Assalomu alaykum 👋
+
+
+<!-- CHAT AREA -->
+
+
+<main class="chat-area">
+
+
+
+<header class="chat-top">
+
+
+<div>
+
+<h2>
+🤖 Diyorbek AI
 </h2>
 
+
+<p>
+Online AI Assistant
+</p>
+
+
 </div>
 
-<div class="messages" id="messages">
 
-<div class="ai">
 
-Salom! Men <b>Diyorbek AI</b>man.
+<div class="status">
+
+🟢 Online
+
+</div>
+
+
+</header>
+
+
+
+
+<section class="messages" id="messages">
+
+
+
+<div class="message ai">
+
+
+<div class="icon">
+
+🤖
+
+</div>
+
+
+<div class="message-box">
+
+
+<h4>Diyorbek AI</h4>
+
+
+<p>
+
+Assalomu alaykum 👋
+
+Men Diyorbek AI.
 
 Sizga qanday yordam bera olaman?
 
-</div>
+</p>
+
 
 </div>
 
-<div class="chat-input">
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<footer class="input-area">
+
 
 <input
-type="text"
+
 id="message"
-placeholder="Xabar yozing...">
+
+placeholder="Xabar yozing..."
+
+autocomplete="off"
+
+>
+
 
 <button onclick="sendMessage()">
 
-Yuborish
+➤
 
 </button>
 
-</div>
+
+</footer>
+
+
+
+</main>
+
+
 
 </div>
 
-</div>
 
 </body>
 
 </html>
+<footer class="input-area">
+
+
+<button class="attach-btn" onclick="openFile()">
+
+📎
+
+</button>
+
+
+<input
+
+id="message"
+
+placeholder="Diyorbek AI ga yozing..."
+
+autocomplete="off"
+
+onkeydown="enterSend(event)"
+
+>
+
+
+<button class="send-btn" onclick="sendMessage()">
+
+➤
+
+</button>
+
+
+<input 
+type="file" 
+id="fileInput" 
+hidden
+>
+
+
+
+</footer>
