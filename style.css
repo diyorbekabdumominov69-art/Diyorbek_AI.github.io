@@ -1103,3 +1103,40 @@ font-size:18px;
 background:#2ea043;
 
 }
+/* USERS */
+
+.users-table{
+
+width:95%;
+
+margin:30px auto;
+
+border-collapse:collapse;
+
+}
+
+.users-table th{
+
+background:#238636;
+
+padding:15px;
+
+}
+
+.users-table td{
+
+background:#161b22;
+
+padding:15px;
+
+border-bottom:1px solid #30363d;
+
+text-align:center;
+
+}
+
+.users-table tr:hover td{
+
+background:#21262d;
+
+}
