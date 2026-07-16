@@ -821,3 +821,94 @@ cursor:pointer;
 background:#2ea043;
 
 }
+/* AI IMAGE */
+
+.image-generator{
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.image-generator h1{
+
+margin-bottom:15px;
+
+}
+
+.image-generator p{
+
+color:#8b949e;
+
+margin-bottom:20px;
+
+}
+
+.image-generator textarea{
+
+width:90%;
+
+height:150px;
+
+padding:20px;
+
+border:none;
+
+outline:none;
+
+resize:none;
+
+background:#21262d;
+
+color:white;
+
+border-radius:15px;
+
+font-size:16px;
+
+margin-bottom:25px;
+
+}
+
+.image-generator button{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:12px;
+
+background:#238636;
+
+color:white;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+.image-generator button:hover{
+
+background:#2ea043;
+
+}
+
+#imageResult{
+
+margin-top:40px;
+
+}
+
+#generatedImage{
+
+width:90%;
+
+max-width:700px;
+
+border-radius:20px;
+
+border:2px solid #30363d;
+
+}
