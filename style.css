@@ -1042,3 +1042,64 @@ font-size:17px;
 background:#dc2626;
 
 }
+/* VOICE */
+
+.voice-box{
+
+margin:60px auto;
+
+width:700px;
+
+background:#161b22;
+
+border:1px solid #30363d;
+
+border-radius:20px;
+
+padding:50px;
+
+text-align:center;
+
+}
+
+.voice-box h1{
+
+margin-bottom:20px;
+
+}
+
+.voice-box p{
+
+margin-bottom:30px;
+
+color:#8b949e;
+
+font-size:18px;
+
+}
+
+.voice-box button{
+
+padding:15px 35px;
+
+margin:10px;
+
+border:none;
+
+border-radius:10px;
+
+background:#238636;
+
+color:white;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+.voice-box button:hover{
+
+background:#2ea043;
+
+}
