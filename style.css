@@ -738,3 +738,86 @@ padding:20px;
 border-radius:12px;
 
 }
+/* PREMIUM */
+
+.premium{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:50px;
+
+}
+
+.premium-card{
+
+width:650px;
+
+background:#161b22;
+
+border:1px solid #30363d;
+
+border-radius:20px;
+
+padding:40px;
+
+text-align:center;
+
+}
+
+.premium-card h1{
+
+color:#58a6ff;
+
+margin-bottom:20px;
+
+}
+
+.premium-card p{
+
+color:#8b949e;
+
+margin-bottom:25px;
+
+}
+
+.premium-card ul{
+
+text-align:left;
+
+margin-bottom:30px;
+
+line-height:40px;
+
+font-size:18px;
+
+}
+
+.premium-card button{
+
+width:100%;
+
+padding:18px;
+
+font-size:20px;
+
+background:#238636;
+
+border:none;
+
+border-radius:12px;
+
+color:white;
+
+cursor:pointer;
+
+}
+
+.premium-card button:hover{
+
+background:#2ea043;
+
+}
