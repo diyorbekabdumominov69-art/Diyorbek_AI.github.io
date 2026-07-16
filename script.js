@@ -213,3 +213,8 @@ role.innerHTML=localStorage.getItem("role");
 }
 
 });
+function buyPremium(){
+
+alert("Premium to'lov tizimi keyingi versiyada qo'shiladi.");
+
+}
