@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chat History | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body onload="checkLogin();loadHistory();">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🤖 Diyorbek AI</h2>
+
+<button onclick="location.href='chat.html'">💬 AI Chat</button>
+<button onclick="location.href='profile.html'">👤 Profile</button>
+<button onclick="location.href='premium.html'">👑 Premium</button>
+<button onclick="location.href='settings.html'">⚙️ Settings</button>
+<button onclick="logout()">🚪 Logout</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+
+<h2>📜 Chat History</h2>
+
+</div>
+
+<div class="history-box" id="historyBox">
+
+<p>Hozircha tarix yo'q.</p>
+
+</div>
+
+<button class="clear-btn" onclick="clearHistory()">
+
+🗑 Tarixni tozalash
+
+</button>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
