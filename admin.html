@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Panel | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body onload="checkAdmin()">
+
+<div class="chat">
+
+    <div class="sidebar">
+
+        <h2>🛡️ Admin</h2>
+
+        <button onclick="location.href='chat.html'">
+            💬 AI Chat
+        </button>
+
+        <button onclick="location.href='index.html'">
+            🏠 Bosh sahifa
+        </button>
+
+        <button onclick="logout()">
+            🚪 Logout
+        </button>
+
+    </div>
+
+    <div class="chat-main">
+
+        <div class="chat-header">
+
+            <h2>Admin Dashboard</h2>
+
+        </div>
+
+        <div class="dashboard">
+
+            <div class="dash-card">
+                <h3>👥 Users</h3>
+                <h1 id="users">1</h1>
+            </div>
+
+            <div class="dash-card">
+                <h3>💬 Chats</h3>
+                <h1 id="chats">0</h1>
+            </div>
+
+            <div class="dash-card">
+                <h3>⭐ Premium</h3>
+                <h1 id="premium">0</h1>
+            </div>
+
+            <div class="dash-card">
+                <h3>🟢 Online</h3>
+                <h1 id="online">1</h1>
+            </div>
+
+        </div>
+
+        <div class="panel">
+
+            <h2>Admin Tools</h2>
+
+            <button onclick="alert('Keyinchalik qo'shiladi')">
+                👑 Premium berish
+            </button>
+
+            <button onclick="alert('Keyinchalik qo'shiladi')">
+                🚫 User bloklash
+            </button>
+
+            <button onclick="alert('Keyinchalik qo'shiladi')">
+                📢 E'lon yuborish
+            </button>
+
+            <button onclick="alert('Keyinchalik qo'shiladi')">
+                ⚙️ AI sozlamalari
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
