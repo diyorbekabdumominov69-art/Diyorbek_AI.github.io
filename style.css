@@ -292,3 +292,109 @@ flex-direction:column;
 }
 
 }
+/* ===========================
+LOGIN
+=========================== */
+
+.login-container{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:15px;
+
+    padding:40px;
+
+    text-align:center;
+
+}
+
+.login-box h1{
+
+    margin-bottom:10px;
+
+    color:#58a6ff;
+
+}
+
+.login-box p{
+
+    color:#8b949e;
+
+    margin-bottom:30px;
+
+}
+
+.login-box input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:10px;
+
+    background:#21262d;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+.login-box button{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:#238636;
+
+    color:white;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+.login-box button:hover{
+
+    background:#2ea043;
+
+}
+
+.login-box a{
+
+    color:#58a6ff;
+
+    text-decoration:none;
+
+}
