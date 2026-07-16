@@ -188,3 +188,28 @@ messages.scrollTop=messages.scrollHeight;
 input.value="";
 
 }
+window.addEventListener("load",()=>{
+
+const name=document.getElementById("profileName");
+const email=document.getElementById("profileEmail");
+const role=document.getElementById("roleText");
+
+if(name){
+
+name.innerHTML=localStorage.getItem("username") || "Admin";
+
+}
+
+if(email){
+
+email.innerHTML=localStorage.getItem("email") || localStorage.getItem("useremail");
+
+}
+
+if(role){
+
+role.innerHTML=localStorage.getItem("role");
+
+}
+
+});
