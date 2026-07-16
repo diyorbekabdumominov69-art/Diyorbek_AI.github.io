@@ -1,0 +1,294 @@
+/* ===========================
+   Diyorbek AI
+   Style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    width:100%;
+    height:70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    background:#161b22;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    border-bottom:1px solid #30363d;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:bold;
+
+    color:#58a6ff;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:18px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    transition:.3s;
+
+    font-size:17px;
+
+}
+
+.nav-links a:hover{
+
+    color:#58a6ff;
+
+}
+
+.login-btn{
+
+    background:#238636;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+}
+
+.login-btn:hover{
+
+    background:#2ea043;
+
+    color:white;
+
+}
+
+/* HERO */
+
+.hero{
+
+    margin-top:130px;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.hero h1{
+
+    font-size:70px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    color:#8b949e;
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.btn{
+
+    background:#238636;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+}
+
+.btn2{
+
+    background:#21262d;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn2:hover{
+
+    background:#30363d;
+
+}
+
+/* CARDS */
+
+.cards{
+
+    width:90%;
+
+    margin:70px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    transition:.3s;
+
+    text-align:center;
+
+    font-size:45px;
+
+}
+
+.card h2{
+
+    margin-top:20px;
+
+    font-size:26px;
+
+}
+
+.card p{
+
+    color:#8b949e;
+
+    margin-top:10px;
+
+    font-size:16px;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#58a6ff;
+
+}
+
+/* FOOTER */
+
+footer{
+
+    margin-top:80px;
+
+    padding:35px;
+
+    text-align:center;
+
+    color:#8b949e;
+
+    border-top:1px solid #30363d;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.navbar{
+
+padding:20px;
+
+flex-direction:column;
+height:auto;
+
+}
+
+.nav-links{
+
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:45px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+}
+
+}
