@@ -350,3 +350,23 @@ document.getElementById("voiceStatus").innerHTML=
 "⏹ To'xtatildi.";
 
 }
+function loadUsers(){
+
+const table=document.getElementById("usersTable");
+
+if(!table) return;
+
+const username=localStorage.getItem("username") || "Admin";
+const email=localStorage.getItem("useremail") || ADMIN_EMAIL;
+const role=localStorage.getItem("role") || "admin";
+
+table.innerHTML=`
+<tr>
+<td>${username}</td>
+<td>${email}</td>
+<td>${role}</td>
+<td>🟢 Online</td>
+</tr>
+`;
+
+}
