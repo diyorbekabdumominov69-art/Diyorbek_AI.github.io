@@ -302,3 +302,51 @@ localStorage.removeItem("history");
 location.reload();
 
 }
+let recognition;
+
+function startVoice(){
+
+const SpeechRecognition =
+window.SpeechRecognition ||
+window.webkitSpeechRecognition;
+
+if(!SpeechRecognition){
+
+alert("Brauzeringiz Voice Chatni qo'llab-quvvatlamaydi.");
+
+return;
+
+}
+
+recognition = new SpeechRecognition();
+
+recognition.lang="uz-UZ";
+
+recognition.start();
+
+document.getElementById("voiceStatus").innerHTML=
+"🎤 Tinglanmoqda...";
+
+recognition.onresult=function(event){
+
+const text=event.results[0][0].transcript;
+
+document.getElementById("voiceStatus").innerHTML=
+"Siz aytdingiz: "+text;
+
+};
+
+}
+
+function stopVoice(){
+
+if(recognition){
+
+recognition.stop();
+
+}
+
+document.getElementById("voiceStatus").innerHTML=
+"⏹ To'xtatildi.";
+
+}
