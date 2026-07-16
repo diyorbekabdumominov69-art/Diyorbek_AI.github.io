@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body onload="checkLogin()">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🤖 Diyorbek AI</h2>
+
+<button onclick="location.href='chat.html'">💬 AI Chat</button>
+<button onclick="location.href='profile.html'">👤 Profile</button>
+<button onclick="location.href='premium.html'">👑 Premium</button>
+<button onclick="location.href='image.html'">🖼️ AI Image</button>
+<button onclick="logout()">🚪 Logout</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+<h2>⚙️ Sozlamalar</h2>
+</div>
+
+<div class="settings">
+
+<div class="setting-card">
+
+<h2>🌍 Til</h2>
+
+<select id="language">
+
+<option value="uz">O'zbek</option>
+<option value="en">English</option>
+<option value="ru">Русский</option>
+
+</select>
+
+</div>
+
+<div class="setting-card">
+
+<h2>🌙 Mavzu</h2>
+
+<button onclick="toggleTheme()">
+Dark / Light
+</button>
+
+</div>
+
+<div class="setting-card">
+
+<h2>🔔 Bildirishnomalar</h2>
+
+<label>
+
+<input type="checkbox" id="notify">
+
+ Yoqish
+
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<h2>💾 Saqlash</h2>
+
+<button onclick="saveSettings()">
+Saqlash
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
