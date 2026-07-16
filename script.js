@@ -163,3 +163,28 @@ window.onload=function(){
     }
 
 }
+function sendMessage(){
+
+const input=document.getElementById("message");
+
+const messages=document.getElementById("messages");
+
+if(input.value.trim()=="") return;
+
+messages.innerHTML+=`
+<div class="user">
+${input.value}
+</div>
+`;
+
+messages.innerHTML+=`
+<div class="ai">
+⏳ Diyorbek AI javob tayyorlamoqda...
+</div>
+`;
+
+messages.scrollTop=messages.scrollHeight;
+
+input.value="";
+
+}
