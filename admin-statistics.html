@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Statistics | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body onload="checkAdmin();loadStats()">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🛡️ Admin</h2>
+
+<button onclick="location.href='admin.html'">
+📊 Dashboard
+</button>
+
+<button onclick="location.href='admin-users.html'">
+👥 Users
+</button>
+
+<button onclick="location.href='admin-statistics.html'">
+📈 Statistics
+</button>
+
+<button onclick="logout()">
+🚪 Logout
+</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+
+<h2>📈 Statistics</h2>
+
+</div>
+
+<div class="dashboard">
+
+<div class="dash-card">
+<h3>👥 Users</h3>
+<h1 id="usersCount">0</h1>
+</div>
+
+<div class="dash-card">
+<h3>💬 Messages</h3>
+<h1 id="messagesCount">0</h1>
+</div>
+
+<div class="dash-card">
+<h3>⭐ Premium</h3>
+<h1 id="premiumCount">0</h1>
+</div>
+
+<div class="dash-card">
+<h3>🟢 Online</h3>
+<h1 id="onlineCount">0</h1>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
