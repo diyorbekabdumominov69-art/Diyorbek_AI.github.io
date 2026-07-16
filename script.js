@@ -218,3 +218,20 @@ function buyPremium(){
 alert("Premium to'lov tizimi keyingi versiyada qo'shiladi.");
 
 }
+function generateImage(){
+
+const prompt=document.getElementById("imagePrompt").value.trim();
+
+if(prompt===""){
+
+alert("Rasm tavsifini kiriting!");
+
+return;
+
+}
+
+alert(
+"Hozircha demo.\n\nKeyinchalik AI rasm generator ulanadi."
+);
+
+}
