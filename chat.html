@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Diyorbek AI Chat</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+
+</head>
+
+<body onload="checkLogin()">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🤖 Diyorbek AI</h2>
+
+<button onclick="location.href='index.html'">
+🏠 Bosh sahifa
+</button>
+
+<button onclick="location.href='premium.html'">
+👑 Premium
+</button>
+
+<button onclick="location.href='image.html'">
+🖼️ AI Image
+</button>
+
+<button onclick="location.href='profile.html'">
+👤 Profile
+</button>
+
+<button onclick="logout()">
+🚪 Logout
+</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+
+<h2 id="welcome">
+Assalomu alaykum 👋
+</h2>
+
+</div>
+
+<div class="messages" id="messages">
+
+<div class="ai">
+
+Salom! Men <b>Diyorbek AI</b>man.
+
+Sizga qanday yordam bera olaman?
+
+</div>
+
+</div>
+
+<div class="chat-input">
+
+<input
+type="text"
+id="message"
+placeholder="Xabar yozing...">
+
+<button onclick="sendMessage()">
+
+Yuborish
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
