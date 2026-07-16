@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Users | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+
+<body onload="checkAdmin();loadUsers();">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🛡️ Admin</h2>
+
+<button onclick="location.href='admin.html'">📊 Dashboard</button>
+
+<button onclick="location.href='admin-users.html'">👥 Users</button>
+
+<button onclick="location.href='chat.html'">💬 AI Chat</button>
+
+<button onclick="logout()">🚪 Logout</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+
+<h2>👥 Users</h2>
+
+</div>
+
+<table class="users-table">
+
+<thead>
+
+<tr>
+
+<th>Username</th>
+
+<th>Email</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="usersTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
