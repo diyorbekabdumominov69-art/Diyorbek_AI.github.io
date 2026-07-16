@@ -384,3 +384,25 @@ document.getElementById("premiumCount").innerText = premium;
 document.getElementById("onlineCount").innerText = users;
 
 }
+const answers = {
+  "salom": "Assalomu alaykum! 😊",
+  "isming nima": "Men Diyorbek AI.",
+  "xayr": "Xayr! Yana kutaman."
+};
+
+function sendMessage() {
+  const input = document.getElementById("message");
+  const text = input.value.trim().toLowerCase();
+
+  if (!text) return;
+
+  const messages = document.getElementById("messages");
+
+  messages.innerHTML += `<div class="user">${text}</div>`;
+
+  const reply = answers[text] || "Kechirasiz, bu savolga javob bera olmayman.";
+
+  messages.innerHTML += `<div class="ai">${reply}</div>`;
+
+  input.value = "";
+}
