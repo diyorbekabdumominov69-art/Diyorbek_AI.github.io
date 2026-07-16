@@ -235,3 +235,70 @@ alert(
 );
 
 }
+function saveSettings(){
+
+const lang=document.getElementById("language").value;
+const notify=document.getElementById("notify").checked;
+
+localStorage.setItem("language",lang);
+localStorage.setItem("notify",notify);
+
+alert("Sozlamalar saqlandi.");
+
+}
+
+function toggleTheme(){
+
+alert("Light Mode keyingi versiyada qo'shiladi.");
+
+}
+// Chat tarixini saqlash
+function saveHistory(message){
+
+let history=JSON.parse(localStorage.getItem("history"))||[];
+
+history.push(message);
+
+localStorage.setItem("history",JSON.stringify(history));
+
+}
+
+// Chat tarixini yuklash
+function loadHistory(){
+
+const box=document.getElementById("historyBox");
+
+if(!box) return;
+
+let history=JSON.parse(localStorage.getItem("history"))||[];
+
+if(history.length===0){
+
+box.innerHTML="<p>Hozircha tarix yo'q.</p>";
+
+return;
+
+}
+
+box.innerHTML="";
+
+history.forEach(msg=>{
+
+box.innerHTML+=`
+<div class="history-item">
+${msg}
+</div>
+`;
+
+});
+
+}
+
+// Tarixni o'chirish
+function clearHistory(){
+
+localStorage.removeItem("history");
+
+location.reload();
+
+}
