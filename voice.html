@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Voice Chat | Diyorbek AI</title>
+
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+
+<body onload="checkLogin()">
+
+<div class="chat">
+
+<div class="sidebar">
+
+<h2>🤖 Diyorbek AI</h2>
+
+<button onclick="location.href='chat.html'">💬 AI Chat</button>
+<button onclick="location.href='history.html'">📜 History</button>
+<button onclick="location.href='profile.html'">👤 Profile</button>
+<button onclick="location.href='settings.html'">⚙️ Settings</button>
+<button onclick="logout()">🚪 Logout</button>
+
+</div>
+
+<div class="chat-main">
+
+<div class="chat-header">
+<h2>🎤 Voice Chat</h2>
+</div>
+
+<div class="voice-box">
+
+<h1>🎤 Diyorbek AI Voice</h1>
+
+<p id="voiceStatus">
+🎙️ "Start" tugmasini bosing.
+</p>
+
+<button onclick="startVoice()">
+🎤 Start
+</button>
+
+<button onclick="stopVoice()">
+⏹ Stop
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
